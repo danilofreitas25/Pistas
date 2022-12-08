@@ -1,0 +1,13 @@
+<div class="container mt-5 mb-2 ">
+    <div class="row">
+      <div class="col-4" *ngFor="let track of tracks">
+        <div class="card">
+          <div class="card-image">
+            <app-foto [img]="track.img"></app-foto>
+            <span class="card-title">{{track.nome}}</span>
+          </div>    
+            <button class="btn red darken-4" (click)="deletar(track.id)">Deletar</button>
+        </div>
+      </div>
+    </div>
+  </div>
